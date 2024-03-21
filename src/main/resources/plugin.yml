@@ -1,0 +1,4 @@
+name: BerryJarHubWitDI
+version: '${project.version}'
+main: net.berryjar.berryjarhubwitdi.BerryJarHubWitDI
+api-version: '1.20'

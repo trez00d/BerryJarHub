@@ -1,4 +1,4 @@
-package net.berryjar.berryjarhubwitdi.listener;
+package net.berryjar.berryjarhubwitdi.listener.join;
 
 import net.berryjar.berryjarhubwitdi.BerryJarHubWitDI;
 import net.berryjar.berryjarhubwitdi.spawnitems.TeleportCompass;
@@ -19,7 +19,7 @@ public class PlayerJoinGiveItems implements Listener {
 
     @EventHandler
     public void playerJoinGiveItemsEvent(PlayerJoinEvent event) {
-
+        System.out.println("giveitemtest");
         Player player = event.getPlayer();
         VisibilityClock visClock = new VisibilityClock(plugin);
         ItemStack clock = visClock.getVisClock();

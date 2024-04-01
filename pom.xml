@@ -39,6 +39,9 @@
             </goals>
           </execution>
         </executions>
+        <configuration>
+            <outputFile>/home/z00d/Desktop/MavenPlugins/BerryJarHubWithDI.jar</outputFile>
+        </configuration>
       </plugin>
     </plugins>
     <resources>
@@ -58,6 +61,10 @@
           <id>sonatype</id>
           <url>https://oss.sonatype.org/content/groups/public/</url>
       </repository>
+      <repository>
+          <id>jitpack.io</id>
+          <url>https://jitpack.io</url>
+      </repository>
   </repositories>
 
   <dependencies>
@@ -66,6 +73,18 @@
           <artifactId>spigot-api</artifactId>
           <version>1.20.4-R0.1-SNAPSHOT</version>
           <scope>provided</scope>
+      </dependency>
+      <dependency>
+          <groupId>com.github.ElgarL</groupId>
+          <artifactId>groupmanager</artifactId>
+          <version>3.2</version>
+          <scope>provided</scope>
+      </dependency>
+      <dependency>
+          <groupId>org.ipvp</groupId>
+          <artifactId>canvas</artifactId>
+          <version>1.7.0-SNAPSHOT</version>
+          <scope>compile</scope>
       </dependency>
   </dependencies>
 </project>

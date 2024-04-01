@@ -1,4 +1,4 @@
-package net.berryjar.berryjarhubwitdi.listener;
+package net.berryjar.berryjarhubwitdi.listener.join;
 
 import net.berryjar.berryjarhubwitdi.BerryJarHubWitDI;
 import net.berryjar.berryjarhubwitdi.scoreboard.ScoreboardHandler;
@@ -21,7 +21,7 @@ public class PlayerJoinScoreboard implements Listener {
         Player player = event.getPlayer();
         ScoreboardHandler scoreBoardHandler = new ScoreboardHandler(plugin);
         scoreBoardHandler.createScoreboard(player);
-        scoreBoardHandler.scheduleScoreboardUpdateTask();
+
 
     }
 

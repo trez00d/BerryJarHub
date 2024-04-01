@@ -1,4 +1,4 @@
-package net.berryjar.berryjarhubwitdi.listener;
+package net.berryjar.berryjarhubwitdi.listener.join;
 
 import net.berryjar.berryjarhubwitdi.config.ConfigManager;
 import net.berryjar.berryjarhubwitdi.player.BerryJarHubPlayer;

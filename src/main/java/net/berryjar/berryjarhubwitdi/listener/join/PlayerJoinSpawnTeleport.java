@@ -1,11 +1,10 @@
-package net.berryjar.berryjarhubwitdi.listener.spawn;
+package net.berryjar.berryjarhubwitdi.listener.join;
 
 import net.berryjar.berryjarhubwitdi.BerryJarHubWitDI;
 import net.berryjar.berryjarhubwitdi.chat.ChatHandler;
+import net.berryjar.berryjarhubwitdi.warp.Warp;
 import net.berryjar.berryjarhubwitdi.warp.WarpManager;
-import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
-import org.bukkit.Location;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -24,8 +23,10 @@ public class PlayerJoinSpawnTeleport implements Listener {
 
         WarpManager warpManager = new WarpManager(plugin);
         Player player = event.getPlayer();
-        player.teleport(warpManager.getWarp("spawnloc"));
+        Warp warp = warpManager.getWarp("spawnloc");
+        player.teleport(warp.getLocation());
         player.setFallDistance(0);
+        player.setHealth(20F);
         player.sendMessage(ChatHandler.chatPrefix + ChatColor.GREEN + "Welcome to the server! We're glad to have you.");
 //        Bukkit.getScheduler().scheduleSyncDelayedTask(BerryJarHub.getPlugin(), new Runnable() {
 //            @Override
